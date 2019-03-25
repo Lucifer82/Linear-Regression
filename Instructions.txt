@@ -1,0 +1,11 @@
+Copy this code to import the dataset
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+link='https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/FuelConsumptionCo2.csv'
+df=pd.read_csv(link)
+print(df)
+
+
+linear_regression('ENGINESIZE','CO2EMISSIONS',df,1.04)
